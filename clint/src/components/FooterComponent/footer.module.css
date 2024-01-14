@@ -1,0 +1,27 @@
+#footerMainsection{    
+    /* background: url('../../assets/images/Footer.jpg') no-repeat center center ; */
+    
+    width: 100%;
+    /* height: 300px; */
+    /* background-size: cover; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    margin-left: 10px;
+    opacity: .9;
+}
+
+#footerSubsection1{
+    text-align: justify;
+}
+#footerSubsection1image{
+    width: 100%;
+}
+#footerBot{
+    text-align: start;
+}
+#footerBot ul li{
+    margin-left: 25px;
+    float: left;
+}

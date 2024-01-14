@@ -1,0 +1,37 @@
+.filterContainer{
+    height: 80px;
+    background-color: rgba(65, 62, 62, 0.5);
+}
+.showTime{
+    height: 100px;
+    border-color: #D9D9D9;
+    /* border-width: 0.1px; */
+}
+.showTimeBox{
+    width: 115px;
+    height: 75px;
+}
+.showTimeBox2{
+    width: 160px;
+    height: 75px;
+}
+.searchContainer{
+    height: 100px;
+}
+.showSearchContainer .box1{
+    background-color: rgba(65, 62, 62, 0.5);
+}
+/* .showSearchContainer .box2{
+   margin-left: 450px;
+} */
+.locationContainer{
+    height: auto;
+}
+.locationContainer2 .boxTime{
+    height: 45px; 
+    width:140px; 
+    background-color: rgba(65, 62, 62, 0.5)
+}
+.locationContainer2 .boxTime .boxTimeP{
+    color: #05FF47;
+}
