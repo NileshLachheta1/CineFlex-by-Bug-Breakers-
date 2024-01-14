@@ -1,0 +1,72 @@
+*{
+    color: white;
+}
+
+/*================ First Section =============== */
+
+.banner{
+    height: 500px;
+    width: 100%;
+    opacity: 0.8;
+}
+.bannerText{
+    line-height: 8px;
+    font-size: 28px;
+}
+.bannerHeading{
+    font-size: 64px;
+}
+@media(max-width: 810px) {
+    .banner{
+        height: 300px;
+    }
+    .bannerText{
+        font-size: 20px;
+    }
+    .bannerHeading{
+        font-size: 48px;
+    }
+  }
+@media(max-width: 320px) {
+    .banner{
+        height: 150px;
+    }
+    .bannerText{
+        font-size: 10px;
+    }
+    .bannerHeading{
+        font-size: 24px;
+    }
+  }
+
+/*================ Second Section =============== */
+
+.aboutSecSection{
+    height: auto;
+    background: #1B1415;
+}
+
+.aboutImg1{
+    height: 500px;
+}
+.viaks{
+    height: auto
+    ;
+    width: 100%;
+    /* background: rgba(56, 53, 53, 0.105); */
+    position: relative;
+}
+.vikas, span{
+    position:absolute;
+}
+
+.nameheading {
+    /* margin-top: 15px; */
+    margin-top: 20px;
+    font-size: 28px;
+    
+
+}
+.stars{
+    margin-top: 12%;
+}

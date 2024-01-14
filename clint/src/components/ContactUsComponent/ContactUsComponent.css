@@ -1,0 +1,234 @@
+/*================ First Section =============== */
+
+.banner{
+    height: 500px;
+    width: 100%;
+    opacity: 0.8;
+}
+.banner-text{
+    line-height: 8px;
+    font-size: 28px;
+}
+.banner-heading{
+    font-size: 64px;
+}
+@media(max-width: 810px) {
+    .banner{
+        height: 300px;
+    }
+    .banner-text{
+        font-size: 20px;
+    }
+    .banner-heading{
+        font-size: 48px;
+    }
+  }
+@media(max-width: 320px) {
+    .banner{
+        height: 150px;
+    }
+    .banner-text{
+        font-size: 10px;
+    }
+    .banner-heading{
+        font-size: 24px;
+    }
+  }
+
+/*================ Second Section =============== */
+
+
+.sec-div{
+    height: 750px;
+    width: 100%;
+    background: linear-gradient(180deg,  rgba(225, 30, 30, 0.180) 50%, rgba(255, 2, 2, 0.350) 100%);
+}
+@media(max-width: 700px) {
+    .sec-div{
+        height: 1050px !important;
+    }
+  }
+.sec-div img{
+    opacity: 0.4;
+}
+.paragraph{
+    width: 60%;
+    
+}
+.contactus-form{
+    width: 70%;
+}
+
+.contactus-form form input{
+    background: #000;
+    opacity: 0.8;
+    border: none;
+    color: white;
+}
+.contactus-form form input::placeholder{
+    color: whitesmoke;
+}
+.contactus-form form input:focus{
+   border: none;
+}
+.contactus-form form textarea{
+    background: #000;
+    opacity: 0.8;
+    border: none;
+}
+.contactus-form form textarea::placeholder{
+    color: whitesmoke;
+}
+.contactus-form form button{
+    background: #c41b1b;
+    border-radius: 15px;
+    border: none;
+}
+
+
+
+/*================ Third Section =============== */
+
+.sec-third{
+    height: 200px ;
+    width: 200px ;
+    color: red;
+}
+@media(max-width: 770px) {
+    .sec-third{
+        height: 200px !important;
+        width: 200px !important;
+        color: red;
+    }
+  }
+.sec-third:hover{
+    background-color: red;
+    border-color: red !important;
+    color: white !important;
+}
+.sec-third i {
+    color: red !important;
+}
+.sec-third:hover i {
+    color: white !important;
+}
+
+
+/*================ Fourth Section =============== */
+.fourth-sec{
+    height: 300px;
+}
+.sub-banner{
+    height: 300px;
+    width: 82%;
+    border-radius: 55px;
+    background-image: url(../../assets/images/subscrciptionImage.jpeg);
+    background-size: cover;
+    position: relative;
+}
+.sub-banner-text{
+
+    font-size: 20px;
+    position: absolute;
+}
+.sub-banner-heading{
+    font-size: 36px;
+    position: absolute;
+    margin-top: 80px;
+}
+.sub-button{
+    /* background: white; */
+    position: absolute;
+    margin-top:160px 
+}
+.subscribe-btn input{
+    width: 500px;
+    background: transparent;
+}
+.subscribe-btn button{
+    width: 200px;
+    margin-left: -100px;
+    background: linear-gradient(270deg, rgba(255,0,0,0.2638305322128851) 38%, rgba(255,0,0,0.7820378151260504) 79%);
+}
+.sub-banner-para{
+    position: absolute;
+
+    margin-top: 250px ;
+}
+@media(max-width: 810px) {
+    .sub-banner{
+        height: 270px;
+    }
+    .sub-banner-text{
+        font-size: 16px;
+    }
+    .sub-banner-heading{
+        font-size: 24px;
+    }
+    .sub-button{
+        position: absolute;
+        margin-top:140px 
+    }
+    .subscribe-btn input{
+        width: 400px;
+        background: transparent;
+    }
+    .subscribe-btn button{
+        width: 180px;
+        margin-left: -100px;
+        background: linear-gradient(270deg, rgba(255,0,0,0.2638305322128851) 38%, rgba(255,0,0,0.7820378151260504) 79%);
+    }
+    .sub-banner-para{
+        position: absolute;
+        margin-top: 220px ;
+        color: whitesmoke;
+    }
+  }
+@media(max-width: 640px) {
+    .sub-banner{
+        height: 250px;
+        border-radius: 50px 0px 0px 80px;
+        width: 100%;
+        background-size:380%;
+        background-repeat: no-repeat;
+    }
+    .sub-banner-text{
+        font-size: 10px;
+    }
+    .sub-banner-heading{
+        font-size: 16px;
+        margin-top: 70px;
+
+    }
+    .sub-button{
+        /* background: white; */
+        position: absolute;
+        margin-top:120px 
+    }
+    .subscribe-btn input{
+        width: 250px;
+        background: transparent;
+        padding: 10px in !important;
+        border-right: 1px soid ;
+    }
+    .subscribe-btn button{
+        width: 100px;
+        
+        background: linear-gradient(270deg, rgba(255,0,0,0.2638305322128851) 38%, rgba(255,0,0,0.7820378151260504) 79%);
+    }
+    .sub-banner-para{
+        position: absolute;
+        margin-top: 180px ;
+    }
+  }
+
+
+/*================ Fifth Section =============== */
+
+.fifth-sec{
+    height: 700px;
+}
+
+.add-main{
+    height: 500px;
+}
