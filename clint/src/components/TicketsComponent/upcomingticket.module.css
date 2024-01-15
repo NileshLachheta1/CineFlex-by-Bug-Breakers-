@@ -1,0 +1,41 @@
+#ticketBanner1 {
+    margin: 20px ;
+    /* background-image:  url(images/cinema_ticket.jpg); */
+    width: 100%;
+    height: 300px;
+    background-repeat: no-repeat; 
+}
+#ticketCard,#ticketDashboard1{
+    background-color: rgb(28, 27, 27);
+    text-align: center;
+    margin: auto;
+    border-radius: 15px;
+    /* padding: 10px; */
+}
+
+#ticketImageSection{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+
+ #ticketImageSection img{
+     border-radius: 12px;
+     width: 80%;
+     height: 50vh;
+  }
+  #ticketImageShadowSection{
+     background-color:  rgba(23, 23, 24, 0.7);
+     width: 100%;
+     height: 50vh;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     position: absolute;
+     left: 0;
+     z-index: 1;
+  }
+
+  #ticketImageShadowSection h1 {
+    font-family: 'Times New Roman', Times, serif;
+  }

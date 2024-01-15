@@ -8,7 +8,7 @@
        <div className="offcanvas offcanvas-end " tabindex="-1" id="userprofile" aria-labelledby="offcanvasRightLabel"  style={{backgroundColor: "#161414" }}>
             <div className="offcanvas-header">
                 <h5 id="offcanvasRightLabel" className="text-light  ">Offcanvas right</h5>
-                <button type="button" className="btn-close text-reset text-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                <button type="button" className="btn-close text-reset text-light" data-bs-dismiss="offcanvas" aria-label="Close"></button>
             </div>
             <div className="offcanvas-body">
                 <div id="accordian" className={`${styles.menuParent} ${styles.style1}`}>

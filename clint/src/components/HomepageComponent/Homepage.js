@@ -18,7 +18,7 @@ export default function Homepage() {
         <>
 
             <div  id={styles.HomeBanner}>
-                <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop" controls>
+                <video width="100%" height="100%" playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop" controls>
                     <source src={`${vdo}#t=10,120`} type="video/mp4" />
                 </video>
             </div>

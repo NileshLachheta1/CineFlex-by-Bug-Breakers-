@@ -13,10 +13,10 @@ import MovieBookingPageComponent from './components/MoviesComponent/BookingShow.
 import EditprofileComponent from './components/ProfileComponent/editprofileComponent.js';
 import ContactUsComponent from './components/ContactUsComponent/ContactUsComponent.js';
 import SeatChartComponent from './components/SeatSelectComponent/SeatSelectComponent.js';
-import TheaterOwnerPage from './components/TheaterRegistrationForm/TheaterOwnerPage.js';
+// import TheaterOwnerPage from './components/TheaterRegistrationForm/TheaterOwnerPage.js';
 // import AboutUsComponent from './components/AboutUsComponent/AboutUsComponent.js';
-
-
+import ThreaterOwnerHomePage from './components/ThreaterOwnerComponent/ThreaterOwnerDashboard.js'
+import ProfileTicketSection from './components/TicketsComponent/UpcomingTicketsComponent.js'
 
 function App() {
   let location=useLocation();
@@ -39,7 +39,9 @@ function App() {
       <Route path="/seatBookingChart" element={<SeatChartComponent/>}></Route>
       {/* <Route path="/aboutUs" element={<AboutUsComponent/>}></Route> */}
       <Route path="/theaterRegistrationForm" element={<TheaterRegFormComponent/>}></Route>
-      <Route path="/theaterOwnerPage" element={<TheaterOwnerPage/>}></Route>
+      {/* <Route path="/theaterOwnerPage" element={<TheaterOwnerPage/>}></Route> */}
+      <Route path="/threaterOwnerHomePage" element={<ThreaterOwnerHomePage/>}></Route>
+      <Route path="/profileTicketSection" element={<ProfileTicketSection/>}></Route>
     </Routes>
      {(!isLogin)&&<Footer/>}
       
