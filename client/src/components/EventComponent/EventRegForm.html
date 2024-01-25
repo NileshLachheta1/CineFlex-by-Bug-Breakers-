@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Latest compiled and minified CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <title>Document</title>
+    <style>
+        .EventRegUpperD {
+            width: 100%;
+            height: 567px;
+            background-image: url('https://assets.nflxext.com/ffe/siteui/vlv3/563192ea-ac0e-4906-a865-ba9899ffafad/6b2842d1-2339-4f08-84f6-148e9fcbe01b/IN-en-20231218-popsignuptwoweeks-perspective_alpha_website_large.jpg');
+            background-size: 100% 100%;
+        }
+
+        .EventRegUpperChildD {
+            width: 100%;
+            max-width: 80%;
+            height: 500px;
+            /* height: auto; */
+            position: relative;
+            background-color: rgba(0, 0, 0, 0.646);
+            box-shadow: 1px 1px 20px 1px red;
+
+        }
+        .carousel-item1 {
+            height: 350px;
+        }
+
+        .EventReg-textarea {
+            height: 70px;
+        }
+        .EventReg-FormLineDesign{
+            height: 4px;border-radius: 10px;background: linear-gradient(113deg, rgba(255,0,0,0.812937675070028) 0%, rgba(255,255,255,1) 100%, rgba(0,0,0,1) 255%);
+        }
+        @media screen and (max-width:576px) {
+            .EventRegUpperD {
+            height: 800px;
+        }
+
+        .EventRegUpperChildD {
+            height: 760px;
+        }
+        .carousel-item1 {
+            height: auto;
+        }
+
+      .EventReg-btn{
+            margin-left: 25px;
+        }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid d-flex align-items-center EventRegUpperD">
+
+        <div class="container EventRegUpperChildD">
+            <center>
+                <hr>
+                <h3 class="text-white fw-bold"><u>ADD YOUR EVENT</u></h3>
+                <hr>
+            </center>
+            <form action="" method="" onsubmit="return validateForm()">
+
+                <div id="carouselExample" class="carousel slide">
+                    <div class="carousel-inner">
+                        <!-- ........................first slide start....................................... -->
+                        <div class="carousel-item carousel-item1  ">
+                            <!-- .............................................First Form start Basic Details................................................................... -->
+                            
+                            <h5 class="text-white">Event Basic Details</h5>
+                            <div class="w-100 EventReg-FormLineDesign"></div>
+                            <div class="row p-3">
+
+                                <div class="col-sm-12 col-md-6 col-xl-6 p-4">
+                                    <div class="mb-1">
+                                        <input type="text" 
+                                               id="EventReg-EventTitle"
+                                               onkeyup="return validnameService()" 
+                                               placeholder="Enter Event Title"
+                                               name="eventTitle" 
+                                               class="ms-1 form-control " 
+                                               />
+                                        <p id="eventTitleP"></p>
+                                    </div>
+                                    
+                                    <div class="mb-1">
+                                        <input type="date" 
+                                               id="EventReg-EventDate" 
+                                               onkeyup=" return validemailService()" 
+                                               placeholder="Enter Email" 
+                                               name="eventDate"
+                                               class="ms-1 form-control" 
+                                               />
+                                        <p id="eventDateP"></p>
+                                    </div>
+
+                                    <div class="mb-1">
+                                        <input type="time" 
+                                               id="EventReg-EventTime"
+                                               onkeyup="return validcontactService()" 
+                                               placeholder="Enter Contact no."
+                                               name="eventTime" 
+                                               class="ms-1 form-control" 
+                                               />
+                                        <p id="eventTimeP"></p>
+                                    </div>
+
+                                    <div class="mb-1">
+                                          <h6 class="text-white ms-2 mt-4"><b> Upload licence image Here</b></h6>
+                                          <input type="file" 
+                                                 id="" 
+                                                 onkeyup="return validpass()"
+                                                 placeholder="Uplode Your Event Poster" 
+                                                 name="eventPosterImage"
+                                                 class="form-control ms-1" 
+                                                 />
+                                          <p id="eventPosterImage"></p>
+                                    </div>
+
+                                    <div class="mb-1">
+                                          <h6 class="text-white ms-2 mt-4"><b> Upload licence image Here</b></h6>
+                                          <input type="file" 
+                                                 id="" 
+                                                 onkeyup="return validpass()"
+                                                 placeholder="Uplode Your Aadhar Card Image" 
+                                                 name="eventPosterImage"
+                                                 class="form-control ms-1" 
+                                                 />
+                                          <p id="eventPosterImage"></p>
+                                    </div>
+
+                                </div>
+
+                                <div class="col-sm-12 col-md-6 col-xl-6 p-4">
+                                    <div class="row mb-3">
+
+                                        <div class="col-6">
+                                            <select onchange="print_city('Sstate', this.selectedIndex);" 
+                                                    id="statename"
+                                                    name="state" 
+                                                    class="form-control" 
+                                                    required>
+                                                    </select>
+                                        </div>
+
+                                        <div class="col-6">
+                                            <select id="Sstate" 
+                                                    class="form-control" 
+                                                    name="city" 
+                                                    required>
+                                                    </select>
+
+                                            <script language="javascript">print_state("statename");</script>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="mb-1">
+                                        <textarea type="text" 
+                                                  onkeydown="return validAddhar()" 
+                                                  id="addressfield"
+                                                  class="form-control EventReg-textarea" 
+                                                  placeholder="Enter Full Address"
+                                                  name="eventAddress">
+                                                </textarea>
+                                        <p id="eventAddressP"></p>
+                                    </div>
+
+                                    <div class="mb-1">
+                                          <textarea type="text" 
+                                                    onkeydown="return validAddhar()" 
+                                                    id="EventDiscription"
+                                                    class="form-control EventReg-textarea" 
+                                                    placeholder="Enter Description"
+                                                    name="EventDiscription">
+                                                  </textarea>
+                                          <p id="EventDiscriptionP"></p>
+                                      </div>
+
+
+                                </div>
+
+                            </div>
+                            <!-- .............................................First Form End Basic Details................................................................... -->
+                        </div>
+
+
+
+
+                        <!-- ........................second  slide start....................................... -->
+                        <div class="carousel-item carousel-item1 active">
+                            <!-- .............................................second Form start Seat Layout Details................................................................... -->
+                           
+                            <h5 class="text-white">Organisation Details</h5>
+                            <div class="w-100 EventReg-FormLineDesign"></div>
+                            <h6 class="text-white ms-4 mt-4">
+                                <b> You are a Event Organiser ?
+                                    <span><input type="radio" name="Organiser">Yes</span>
+                                    <span><input type="radio" name="Organiser">No</span>
+                                </b>
+                            </h6>
+                            <div class="row p-3">
+                              <div class="col-sm-12 col-md-6 col-xl-6 p-4">
+                                    <div class="mb-1">
+                                        <input type="text" 
+                                               id="EventReg-EventOrganizationName"
+                                               onkeyup="return validnameService()" 
+                                               placeholder="Event Organization name"
+                                               name="eventOrganizationName" 
+                                               class="ms-1 form-control " 
+                                               />
+                                        <p id="eventOrganizationNameP"></p>
+                                    </div>
+
+                                    <div class="mb-1">
+                                          <textarea type="text" 
+                                                    onkeydown="return validAddhar()" 
+                                                    id="EventOrganizationAddress"
+                                                    class="form-control EventReg-textarea" 
+                                                    placeholder="Enter Full Address of Organisation"
+                                                    name="eventOrganizationAddress"
+                                                    style="margin-left: 57%">
+                                                  </textarea>
+                                          <p id="eventOrganizationAddressP"></p>
+                                     </div>
+                               </div>
+
+                                <div class="col-sm-12 col-md-6 col-xl-6 p-4">
+                                    <div class="mb-1">
+                                          <input onkeydown="return validAddhar()" 
+                                          id="EventGSTINNumber"
+                                          placeholder="GSTIN Number"
+                                          name="eventGSTINNumber"
+                                          class="ms-1 form-control" 
+                                          />
+                                          <p id="eventGSTINNumberP"></p>
+                                      </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <!-- .............................................second Form End Seat Layout Details................................................................... -->
+
+
+
+
+
+                        <!-- ........................third  slide start....................................... -->
+                       
+                         <div class="carousel-item carousel-item1">
+
+                            <!-- .............................................third Form start bank Details................................................................... -->
+                              
+                            <h5 class="text-white">Bank Details</h5>
+                            <div class="w-100 EventReg-FormLineDesign"></div>
+
+                            <div class="row p-3">
+
+                                <div class="col-sm-12 col-md-6 col-xl-6 p-4">
+                                    <div class="mb-1">
+                                        <input type="text" 
+                                               id="EventReg-BeneficiaryName"
+                                               onkeyup="return validnameService()"
+                                               placeholder="Beneficiary Name" 
+                                               name="eventBeneficiaryName"
+                                               class="ms-1 form-control " />
+                                        <p id="eventBeneficiaryNameP"></p>
+                                    </div>
+
+                                    <div class="mt-5">
+                                        <input type="text" 
+                                               id="EventReg-BankName"
+                                               onkeyup=" return validemailService()" 
+                                               placeholder="Bank Name"
+                                               name="eventBankName" 
+                                               class="ms-1 form-control" />
+                                        <p id="eventBankNameP"></p>
+                                    </div>
+
+                                </div>
+
+                                <div class="col-sm-12 col-md-6 col-xl-6 p-4">
+                                    <div class="mb-1">
+                                        <input type="number" 
+                                               id="EventReg-AccountNum"
+                                               onkeyup="return validcontactService()" 
+                                               placeholder="Account Number"
+                                               name="eventAccountNum" 
+                                               class="ms-1 form-control" />
+                                        <p id="eventAccountNumP"></p>
+                                    </div>
+
+                                    <div class="mb-1 mt-5">
+                                        <input type="number" 
+                                               id="EventReg-IfscCode"
+                                               onkeyup="return validcontactService()" 
+                                               placeholder="IFSC Code"
+                                               name="eventIfscCode" 
+                                               class="ms-1 form-control" />
+                                        <p id="eventIfscCodeP"></p>
+                                    </div>
+                                    
+                                </div>
+
+                            </div>
+                            <!-- .............................................third Form End bank  Details................................................................... -->
+                        </div>
+
+                    
+                    
+
+                        <!-- ........................fourth  slide start....................................... -->
+                        <div class="carousel-item carousel-item1">
+                            <h5 class="text-white">Agreement</h5>
+                            <div class="w-100 EventReg-FormLineDesign"></div>
+
+                            <center>
+                            <h6 class="text-white mt-5">Fill this Agreement And Upload it With Your Signature for more <br> information please visit our Agreement <a href="">Download Here</a></h6>
+                            <div class="">
+                                <h6 class="text-white ms-1 mt-4"><b> Upload Agreement Here</b></h6>
+                                <input type="file" 
+                                       id="" 
+                                       onkeyup="return validexperience()" 
+                                       name="agreementImage" 
+                                       class="form-control" 
+                                       />
+                                <p id="agreementImageP"></p>
+                            </div>
+                            </center>
+                        </div>
+                    
+                    </div>
+                    
+                    
+                    <div class=" d-grid gap-2 d-md-flex justify-content-md-end me-4 ">
+                        <button class="btn bg-primary EventReg-btn" type="button" data-bs-target="#carouselExample"
+                            data-bs-slide="prev">Previous
+                        </button>
+                        <button class="btn EventReg-btn" style="background-color: #ff0000d0;" type="button" data-bs-target="#carouselExample"
+                            data-bs-slide="next">Next
+                        </button>
+                    </div>
+                    
+                </div>
+
+            </form>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+    
+</body>
+
+</html>

@@ -1,0 +1,314 @@
+.containerFluid{
+    padding:0;
+}
+
+
+.eventHomeFrame1{
+    width:100%;
+    height: 100vh;
+    background-image: url('../../assets/images/LSA-hero-TL-feature-TL-inline-AD-hero--1600x900.webp'); 
+    background-size: 100% 100%;
+}
+.sliderImg{
+    width:100%;
+    height:560px;
+}
+
+.header{
+    margin-top: 16%;
+}
+
+.eventHomeSideFrame1{
+    width:70%;
+    height: 419.44px;
+    margin: 40px;
+    margin-top: 110px;
+    border: 2px solid rgba(14, 15, 15, 0.39);
+    border-radius: 15px;
+    box-shadow: -20px -20px 2px rgba(39, 40, 41, 0.479);
+}
+
+.eventHomeSideFrame1 img{
+    border: 5px solid rgba(21, 21, 21, 0.014);
+    border-radius: 15px;
+}
+
+.eventHomeSideFrame2{
+    /* margin: 40px; */
+    margin-top: 90px;
+    border: 2px solid rgba(14, 15, 15, 0.39);
+    background-color: rgba(9, 9, 9, 0.04);
+    border-radius: 15px;
+    /* box-shadow: -20px -20px 2px rgba(39, 40, 41, 0.479); */
+}
+.eventHomeFrame p,.eventHomeSideFrame2 p{
+    margin: 10px;
+    color: white;
+}
+
+#smallheader,.blackBtn{
+    width:120px;
+    border: 1px solid red;
+    border-radius: 15px;
+    padding:10px;
+    color:white;
+    background-color: black;
+
+}
+.redBtn{
+    width:120px;
+    border: 1px solid black;
+    border-radius: 15px;
+    padding:10px;
+    color:white;
+    background-color: red;
+}
+h5{
+    color:red;
+}
+
+#featuredEventIndicators{
+    width:85%;
+    height:450px;
+}
+
+.cardTag{
+    width:495px;
+    height:337px;
+    margin-right: 20px;
+    margin-bottom: 50px;
+    /* background-color: white; */
+    border-radius: 20px;
+    /* background-image: url('../../assets/images/about-gallery-5.png'); */
+    background-image: url('https://img.freepik.com/premium-vector/christmas-p…-winter-holidays-background_202497-201.jpg?w=2000');
+    background-size: 100% 100%;
+}
+.cardTag p{
+    color: white;
+}
+
+#cardheader{
+    width:150px;
+    margin-top: 20px;
+    margin-left: 20px;
+    border: 1px solid red;
+    border-radius: 15px;
+    padding:10px;
+    color:white;
+    background-color: black;
+}
+.date{
+    color:red;
+    text-shadow: 10px;
+}
+
+.eventHomeFrame2,.eventHomeFrame5{
+    width:100%;
+    height:auto;
+    background: linear-gradient(350deg, rgb(28, 7, 7) -31.78%, rgb(25, 4, 4) 65%, rgb(22, 1, 1) 53.11%, rgba(14, 1, 1, 0.939) 53.12%, rgba(11, 1, 1, 0.939) 53.12%);
+}
+
+.eventHomeFrame3{
+    width:100%;
+    height:auto;
+    background: linear-gradient(350deg, rgb(5, 5, 5) -31.78%, rgba(0, 0, 0, 0.921) 44.1%, rgba(19, 16, 16, 0.952) 53.11%, rgba(0, 0, 0, 0.958) 53.12%, rgb(0, 0, 0) -50%);
+}
+
+.eventHomeFrame4,.eventHomeFrame6{
+    width:100%;
+    height:auto;
+    background: linear-gradient(350deg, rgb(5, 5, 5) -31.78%, rgba(0, 0, 0, 0.921) 44.1%, rgba(19, 16, 16, 0.952) 53.11%, rgba(0, 0, 0, 0.958) 53.12%, rgb(0, 0, 0) -50%);
+}
+
+.eventHomeCardBody{
+    border: 1px solid rgba(0, 0, 0, 0.196);
+    border-radius:1px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    transition: transform .5s ease-in-out;
+    transform-origin: 50% 65%;
+    transition: transform 5s, filter 3s ease-in-out;
+    filter: brightness(100%);
+  
+}
+/* .eventHomeCardBody :hover{
+    transition: 0.5s;
+    scale: 10px;
+    transform: scale(1.5) rotate(5deg);
+    filter: brightness(100%);   
+  
+} */
+/* ----------------------------------------- */
+.event-card {
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+  }
+
+  .event-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+
+  .event-details {
+    padding: 20px;
+  }
+
+  .event-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+
+  .event-description {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 15px;
+  }
+
+  .event-date {
+    font-size: 12px;
+    color: #888;
+  }
+/* ---------------------------- */
+/* Assuming styles.special is your card class */
+.special {
+    height:200px;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .special img {
+    width: 100%;
+    height: 100%;
+    display: block;
+  }
+
+  .special:hover img {
+    cursor: pointer;
+    transform: scale(1);
+    transition: transform 0.2s ease;
+  }
+ .special img:hover {
+    cursor: pointer;
+    -webkit-filter: brightness(40%);
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 1s ease;
+}
+.special:hover{
+    overflow: visible;
+}
+.eventBody{
+    background-color: white;
+}
+.special:hover .eventBody{
+    width:100%;
+    height:500px;
+    /* margin-top: ; */
+    color:black;
+    background-color: rgb(255, 255, 255);
+}
+.textStyle p{
+    color:white;
+}
+/* ----------------- */
+.glasspanel  {
+    color: #fff;
+    margin: 40px auto;
+    background-color: rgba(255,255,255,0.06);
+    border: 1px solid rgba(255,255,255,0.1);
+    max-width: 65%;
+    border-radius: 15px;
+    padding: 32px;
+    backdrop-filter: blur(10px);
+   
+  }
+  
+  
+
+  #homepageregisterevent {
+    height: 80vh;
+    background: url("https://www.showtech.com.au/wp-content/uploads/2023/06/cerrone@city-recital-hallsydney-2-1024x596.jpg" ) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    text-align: center;
+    font-family: "Lucida Handwriting";
+    overflow: hidden;
+    /* opacity: 0.8; */
+  }
+  
+
+  
+  .glasspanel h1 {
+    min-height: 120px;
+    width: 90%;
+    max-width: 700px;
+    vertical-align: middle;
+    text-align: center;
+    margin: 0 auto;
+    text-decoration: none;
+    color: #fff;
+    padding-top: 60px;
+    color: rgba(255,255,255,0.8);
+  }
+  
+  .glasspanel p {
+    width: 60%;
+    margin: 0 auto;
+    padding-bottom: 32px;
+    color: rgba(255,255,255,0.6);
+  }
+
+
+@media screen and (max-width: 768px) {
+
+    #featuredEventIndicators{
+        width:95%;
+    }
+    .sliderImg{
+        width:100%;
+        height:10%;
+    }
+    .cardTag{
+        width:955px;
+        height:auto;
+        margin-right: 20px;
+        margin-bottom: 50px;
+        background-color: white;
+        border-radius: 20px;
+        background-image: url('../../assets/images/about-gallery-5.png');
+        background-size: 100% 100%;
+    }
+    
+    .eventHomeSideFrame1{
+        width:80%;
+        height: 380.44x;
+        margin: 40px;
+        margin-top: 110px;
+        border: 2px solid rgba(14, 15, 15, 0.39);
+        background-image: url('../../assets/images/a3.jpg');
+        background-size: 100% 100%;
+        border-radius: 15px;
+        box-shadow: -20px -20px 2px rgba(39, 40, 41, 0.479);
+    }
+
+    .eventHomeSideFrame2{
+        margin: 40px;
+        margin-top: 90px;
+        border: 2px solid rgba(14, 15, 15, 0.39);
+        background-color: rgba(9, 9, 9, 0.04);
+        border-radius: 15px;
+        /* box-shadow: -20px -20px 2px rgba(39, 40, 41, 0.479); */
+    }
+}
+  

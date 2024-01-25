@@ -1,0 +1,167 @@
+   #threaterownerMaindiv{
+    background-color: #000;
+   }
+   #threaterOwnerSideNavbar{
+    background-color: rgb(19, 19, 19);
+   }
+   
+   /* Sidebar CSS End */
+    @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+    }
+
+    .sidebar {
+      position: fixed;
+      top: 20%;
+      left: 0;
+      width: 200px;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      transition: width 0.5s ease;
+      z-index: 1;
+    }
+
+    .sidebar .links {
+      list-style: none;
+      margin-top: 20px;
+      overflow-y: auto;
+      scrollbar-width: none;
+      height: calc(100% - 140px);
+    }
+
+    .links li {
+      display: flex;
+      border-radius: 4px;
+      align-items: center;
+    }
+
+    .links li:hover,
+    .links li a:hover,
+    .links li span:hover {
+      cursor: pointer;
+      background: #fff;
+      color: #000;
+    }
+
+    .links li span {
+      padding: 12px 10px;
+    }
+
+    .links li a {
+      padding: 10px;
+      color: #fff;
+      font-weight: 500;
+      white-space: nowrap;
+      text-decoration: none;
+    }
+
+    .links li span {
+      color: #e4d8d8;
+      font-weight: 500;
+      white-space: nowrap;
+    }
+
+    @media (max-width: 576px) {
+
+      .sidebar {
+        display: flex;
+        position: fixed;
+        top: 92%;
+        background-color: #6b5e5e;
+        bottom: 0;
+        height: 55px;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin: auto;
+        z-index: 1;
+      }
+
+      .sidebar .links {
+        display: flex;
+      }
+
+      .sidebar .links {
+        list-style: none;
+        margin: auto;
+        padding: 2px;
+        overflow-x: auto;
+        scrollbar-width: none;
+        height: calc(100% - .5vh);
+      }
+
+      .links li span {
+        color: #e4d8d8;
+        font-weight: 500;
+        white-space: nowrap;
+        font-size: 22px;
+        border-radius: 30px;
+      }
+
+      .sidebar .links li a {
+        display: none;
+      }
+    }
+
+    /* Sidebar CSS End */
+
+    /* Card CSS Start */
+
+    .customCard {
+      height: 32vh;
+    }
+    .cardimage {
+      height: 100%;
+      object-fit: cover;
+    }   
+
+    /* Card CSS End */
+    
+    /* Chart Section CSS Start  */
+    #BookingsStatusBanner {
+      width: 100%;
+      height: 50vh;
+      /* border-radius: 0% 0% 8% 20%; */
+      border-bottom-left-radius: 50px;
+      border-bottom-right-radius: 50px;
+    }
+
+    #donutchartContainer {
+      width: 80%;
+      height: 60vh;
+
+      font-weight: 700;
+      overflow: hidden;
+      border-radius: 30px;
+      position: relative;
+      margin: auto;
+    }
+
+    .graph {
+      width: 100%;
+      height: 100%;
+    }
+
+    @media (max-width: 768px) {
+            
+        #donutchartContainer {
+          width: 100%;
+          height: 45vh;
+
+          font-weight: 700;
+          overflow: hidden;
+          border-radius: 30px;
+          position: relative;
+          margin: auto;
+        }
+      }
+    /* Chart Section CSS End  */
+
+    
